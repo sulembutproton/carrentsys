@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+<head>
+  <title>Online Car Rental System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/w3.css' %}">
+</head>
+<body>
+  <div class="w3-container w3-teal">
+    <h1 class="w3-center">Online Car Rental System<h1>
+  </div>
+  <img class="" style="width:100%; height:80%; margin-top:auto; border-radius:20px; text-color:white;" src="{% static 'images/car-rent.jpg' %}" alt="">
+
+  <form class="w3-container w3-right" action="/customer_portal/login/" mehtod="POST">{% csrf_token %}
+    <input style="width:100px;" class="w3-green w3-btn w3-center w3-large w3-round-large w3-center" type="submit" value="Customer">
+  </form>
+  <form class="w3-container w3-right" action="/car_dealer_portal/login/" method="POST">{% csrf_token %}
+    <input style="width:100px;" class="w3-btn w3-center w3-blue w3-large w3-round-large" type="submit" value="Dealer">
+  <form>
+<body>
+</html>
